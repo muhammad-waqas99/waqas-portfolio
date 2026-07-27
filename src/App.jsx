@@ -7,6 +7,8 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -84,12 +86,11 @@ function App() {
           </div>
 
           <div id="section-contact" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
-            <h2>contact.sh</h2>
-            <p>Your contact form section content here...</p>
+              <Contact/>
           </div>
         </main>
 
-    
+         <Footer/>
         <button 
           className={`scroll-to-top-btn ${showScrollBtn ? 'show' : ''}`}
           onClick={scrollToTop}

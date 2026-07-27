@@ -22,44 +22,27 @@ html, body {
   overflow: visible !important;
 }
 
-:root {
+/* Dark Theme (Default) */
+:root, [data-theme="dark"] {
   --bg: #0A0E0A;
-  --bg-soft: #11161A;
   --paper: #14191E;
-
+  --line: #232923;
   --ink: #E8EAE5;
   --ink-soft: #C8CAC5;
-  --muted: #A0A4A0;
   --dim: #909590;
-
-  --line: #232923;
-  --line-strong: #343A34;
-
   --accent: #34D399;
-  --accent-bright: #6EE7B7;
-  --accent-ink: #34D399;
-
-  --success: #34D399;
-  --error: #F87171;
-  --warning: #FBBF24;
 }
 
-
+/* Light Theme - Softer Backgrounds & Dark Readable Text */
 [data-theme="light"] {
-  --bg: #F4F5F2;
-  --bg-soft: #EBEDE8;
-  --paper: #FFFFFF;
-
-  --ink: #111111;
-  --ink-soft: #262626;
-  --muted: #666B66;
-
-  --line: #D9DDD7;
-  --line-strong: #C5CBC3;
-
-  --accent: #047857;
+  --bg: #F1F5F9;          /* Soft grey background (Eye-friendly, non-glare) */
+  --paper: #FFFFFF;       /* Pure white for cards & navbar */
+  --line: #E2E8F0;        /* Subtle borders */
+  --ink: #0F172A;         /* Dark navy/slate text for high contrast */
+  --ink-soft: #334155;    /* Soft dark text */
+  --dim: #64748B;         /* Muted slate text */
+  --accent: #059669;      /* Darker Emerald green (Readable on light background) */
 }
-
 body {
   background-color: var(--bg);
   color: var(--ink);

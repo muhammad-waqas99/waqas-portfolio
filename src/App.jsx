@@ -3,6 +3,7 @@ import DotGrid from "./components/DotGrid";
 import { Header } from "./components/Header";
 import Navbar from "./components/Navbar";
 import { ArrowUp } from "lucide-react";
+import Hero from "./components/Hero";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -16,7 +17,7 @@ function App() {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  // Handle 30% scroll height detection
+
   useEffect(() => {
     const handleScroll = () => {
       const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -47,11 +48,11 @@ function App() {
   return (
     <>
       <div className="background">
-        <DotGrid
+<DotGrid
           dotSize={3}
           gap={30}
-          baseColor="#11161A"
-          activeColor="#34D399"
+          baseColor={theme === "dark" ? "#11161A" : "#CBD5E1"} 
+          activeColor={theme === "dark" ? "#34D399" : "#059669"} 
           proximity={140}
           shockRadius={90}
           shockStrength={5}
@@ -64,8 +65,8 @@ function App() {
         <Header theme={theme} toggleTheme={toggleTheme} />
 
         <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
-
-        {/* Target Scroll Sections */}
+            <Hero/>
+       
         <main style={{ padding: "20px", color: "var(--ink)", position: "relative", zIndex: 2 }}>
           <div id="section-about" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
             <h2>about.md</h2>
@@ -88,7 +89,7 @@ function App() {
           </div>
         </main>
 
-        {/* Scroll To Top Button (Shows after 30% scroll) */}
+    
         <button 
           className={`scroll-to-top-btn ${showScrollBtn ? 'show' : ''}`}
           onClick={scrollToTop}

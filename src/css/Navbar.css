@@ -125,8 +125,7 @@
     background-color: var(--paper, #14191E);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
     z-index: 99999;
-    
-    /* Animation Control */
+  
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -199,3 +198,17 @@
   visibility: visible;
   transform: translateY(0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

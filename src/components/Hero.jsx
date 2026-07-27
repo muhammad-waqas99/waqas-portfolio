@@ -26,23 +26,45 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="action-btns">
-            <button className="btn-primary" type="button">
-              <Download size={16} /> Download CV
-            </button>
-            
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="icon-btn" aria-label="GitHub">
-              <FaGithub size={18} />
-            </a>
-            
-            <a href="mailto:example@gmail.com" className="icon-btn" aria-label="Mail">
-              <Mail size={18} />
-            </a>
-            
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="icon-btn" aria-label="LinkedIn">
-              <FaLinkedinIn size={18} />
-            </a>
-          </div>
+<div className="action-btns">
+
+  <a 
+    href="/Muhammad-Waqas-Resume.pdf" 
+    download="Muhammad-Waqas-Resume.pdf"
+    className="btn-primary"
+  >
+    <Download size={16} /> Download Resume
+  </a>
+
+  <a 
+    href="https://github.com/muhammad-waqas99" 
+    target="_blank" 
+    rel="noreferrer" 
+    className="icon-btn" 
+    aria-label="GitHub"
+  >
+    <FaGithub size={18} />
+  </a>
+
+  <a 
+    href="mailto:muhammadwaqas.dev99@gmail.com" 
+    className="icon-btn" 
+    aria-label="Mail"
+  >
+    <Mail size={18} />
+  </a>
+
+  <a 
+    href="https://www.linkedin.com/in/waqas-fullstack/" 
+    target="_blank" 
+    rel="noreferrer" 
+    className="icon-btn" 
+    aria-label="LinkedIn"
+  >
+    <FaLinkedinIn size={18} />
+  </a>
+
+</div>
         </div>
 
       

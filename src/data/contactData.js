@@ -2,7 +2,8 @@ export const contactData = {
   header: {
     path: "~/contact",
     file: "contact.json",
-    description: "Interested in working together? Feel free to reach out for freelance work, internships, collaborations, or just to say hello."
+    description:
+      "Interested in working together? Feel free to reach out for freelance work, internships, collaborations, or just to say hello."
   },
 
   info: {
@@ -16,15 +17,15 @@ export const contactData = {
   socials: [
     {
       name: "GitHub",
-      username: "github.com/waqas-dev",
-      url: "https://github.com",
+      username: "github.com/muhammad-waqas99",
+      url: "https://github.com/muhammad-waqas99",
       icon: "FaGithub"
     },
     {
       name: "LinkedIn",
-      username: "linkedin.com/in/waqas",
-      url: "https://linkedin.com",
-      icon: "FaLinkedin"
+      username: "linkedin.com/in/waqas-fullstack",
+      url: "https://www.linkedin.com/in/waqas-fullstack/",
+      icon: "FaLinkedinIn"
     },
     {
       name: "Email",
@@ -35,7 +36,7 @@ export const contactData = {
     {
       name: "Resume",
       username: "view-resume.pdf",
-      url: "#",
+      url: "/Muhammad-Waqas-Resume.pdf",
       icon: "FaFileAlt"
     }
   ]

@@ -18,12 +18,12 @@ export const footerData = {
   socials: [
     {
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/muhammad-waqas99",
       icon: "FaGithub"
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/waqas-fullstack/",
       icon: "FaLinkedin"
     },
     {

@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="hero-container">
       <div className="hero-wrapper">
-        {/* Left Side Content */}
+        
         <div className="left-content">
           <div className="work-status">
             <span className="status-dot"></span>

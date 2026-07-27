@@ -5,7 +5,7 @@ import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 import '../css/ResumeModal.css';
 
-// Worker configure karein PDF render karne ke liye
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const ResumeModal = ({ onClose }) => {
@@ -20,7 +20,7 @@ const ResumeModal = ({ onClose }) => {
     <div className="resume-modal-overlay" onClick={onClose}>
       <div className="resume-modal-container" onClick={(e) => e.stopPropagation()}>
         
-        {/* Header */}
+
         <div className="resume-modal-header">
           <div className="resume-header-title">
             <FileText size={16} className="icon-pdf" />
@@ -45,7 +45,7 @@ const ResumeModal = ({ onClose }) => {
           </div>
         </div>
 
-        {/* PDF Document Body */}
+
         <div className="resume-modal-body" style={{ overflowY: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px 0' }}>
           <Document
             file={resumePdfPath}
@@ -65,7 +65,7 @@ const ResumeModal = ({ onClose }) => {
           </Document>
         </div>
 
-        {/* Bottom Download Button Bar (Mobile) */}
+  
         <div className="resume-modal-footer">
           <a 
             href={resumePdfPath} 

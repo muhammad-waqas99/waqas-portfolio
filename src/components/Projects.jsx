@@ -6,7 +6,7 @@ import '../css/Projects.css';
 const Projects = () => {
   return (
     <section className="projects-container" id="projects">
-      {/* IDE Path Breadcrumb Header */}
+    
       <div className="projects-header">
         <p className="path-text">~/projects</p>
         <h2 className="section-title">
@@ -14,7 +14,7 @@ const Projects = () => {
         </h2>
       </div>
 
-      {/* Grid List */}
+
       <div className="projects-grid">
         {projectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />

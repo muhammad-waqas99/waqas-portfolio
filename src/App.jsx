@@ -9,6 +9,24 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { motion } from "framer-motion";
+
+const Reveal = ({ children }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }} 
+      whileInView={{ opacity: 1, y: 0 }} 
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ 
+        duration: 0.8, 
+        ease: [0.21, 0.47, 0.32, 0.98] 
+      }}
+      style={{ width: "100%" }}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 function App() {
   const [theme, setTheme] = useState(
@@ -53,7 +71,7 @@ function App() {
   return (
     <>
       <div className="background">
-<DotGrid
+        <DotGrid
           dotSize={3}
           gap={30}
           baseColor={theme === "dark" ? "#11161A" : "#CBD5E1"} 
@@ -70,27 +88,44 @@ function App() {
         <Header theme={theme} toggleTheme={toggleTheme} />
 
         <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
-            <Hero/>
+        
        
-        <main style={{ padding: "20px", color: "var(--ink)", position: "relative", zIndex: 2 }}>
-          <div id="section-stack" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
-            <Skills/>
-          </div>
-          <div id="section-about" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
-          <About/>
+        <div id="section-hero">
+          <Reveal>
+            <Hero />
+          </Reveal>
+        </div>
+        
+        <main style={{ padding: "0 20px", color: "var(--ink)", position: "relative", zIndex: 2 }}>
+          
+          <div id="section-stack" style={{ minHeight: "80vh", scrollMarginTop: "60px", padding: "60px 0" }}>
+            <Reveal>
+              <Skills />
+            </Reveal>
           </div>
 
-
-          <div id="section-projects" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
-           <Projects/>
+          <div id="section-about" style={{ minHeight: "80vh", scrollMarginTop: "60px", padding: "60px 0" }}>
+            <Reveal>
+              <About />
+            </Reveal>
           </div>
 
-          <div id="section-contact" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
-              <Contact/>
+          <div id="section-projects" style={{ minHeight: "80vh", scrollMarginTop: "60px", padding: "60px 0" }}>
+            <Reveal>
+              <Projects />
+            </Reveal>
           </div>
+
+          <div id="section-contact" style={{ minHeight: "80vh", scrollMarginTop: "60px", padding: "80px 0" }}>
+            <Reveal>
+              <Contact />
+            </Reveal>
+          </div>
+
         </main>
 
-         <Footer/>
+        <Footer />
+
         <button 
           className={`scroll-to-top-btn ${showScrollBtn ? 'show' : ''}`}
           onClick={scrollToTop}

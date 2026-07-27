@@ -98,25 +98,25 @@ function App() {
         
         <main style={{ padding: "0 20px", color: "var(--ink)", position: "relative", zIndex: 2 }}>
           
-          <div id="section-stack" style={{ minHeight: "80vh", scrollMarginTop: "60px", padding: "60px 0" }}>
+          <div id="section-stack" style={{ minHeight: "80vh", scrollMarginTop: "60px", }}>
             <Reveal>
               <Skills />
             </Reveal>
           </div>
 
-          <div id="section-about" style={{ minHeight: "80vh", scrollMarginTop: "60px", padding: "60px 0" }}>
+          <div id="section-about" style={{ minHeight: "80vh", scrollMarginTop: "60px",  }}>
             <Reveal>
               <About />
             </Reveal>
           </div>
 
-          <div id="section-projects" style={{ minHeight: "80vh", scrollMarginTop: "60px", padding: "60px 0" }}>
+          <div id="section-projects" style={{ minHeight: "80vh", scrollMarginTop: "60px"}}>
             <Reveal>
               <Projects />
             </Reveal>
           </div>
 
-          <div id="section-contact" style={{ minHeight: "80vh", scrollMarginTop: "60px", padding: "80px 0" }}>
+          <div id="section-contact" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
             <Reveal>
               <Contact />
             </Reveal>

@@ -1,6 +1,6 @@
 .contact-container {
   width: 100%;
-  padding: 50px 32px;
+  padding: 30px 32px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -253,7 +253,7 @@
 
 @media (max-width: 868px) {
   .contact-container {
-    padding: 30px 16px;
+    padding: 25px 16px;
   }
 
   .contact-content-grid {

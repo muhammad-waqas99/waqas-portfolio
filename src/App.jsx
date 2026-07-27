@@ -11,14 +11,33 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
 
+
 const Reveal = ({ children }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }} 
-      whileInView={{ opacity: 1, y: 0 }} 
+      initial={{ opacity: 0, y: 45 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.1 }}
       transition={{ 
-        duration: 0.8, 
+        duration: 0.7, 
+        ease: [0.21, 0.47, 0.32, 0.98] 
+      }}
+      style={{ width: "100%" }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+
+const RevealProject = ({ children }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.05 }} 
+      transition={{ 
+        duration: 0.6, 
         ease: [0.21, 0.47, 0.32, 0.98] 
       }}
       style={{ width: "100%" }}
@@ -40,7 +59,7 @@ function App() {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-
+  
   useEffect(() => {
     const handleScroll = () => {
       const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -70,6 +89,7 @@ function App() {
 
   return (
     <>
+
       <div className="background">
         <DotGrid
           dotSize={3}
@@ -89,7 +109,7 @@ function App() {
 
         <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
         
-       
+  
         <div id="section-hero">
           <Reveal>
             <Hero />
@@ -98,25 +118,26 @@ function App() {
         
         <main style={{ padding: "0 20px", color: "var(--ink)", position: "relative", zIndex: 2 }}>
           
-          <div id="section-stack" style={{ minHeight: "80vh", scrollMarginTop: "60px", }}>
+          <div id="section-stack" style={{ minHeight: "auto", scrollMarginTop: "60px", padding: "60px 0" }}>
             <Reveal>
               <Skills />
             </Reveal>
           </div>
 
-          <div id="section-about" style={{ minHeight: "80vh", scrollMarginTop: "60px",  }}>
+          <div id="section-about" style={{ minHeight: "auto", scrollMarginTop: "60px", padding: "60px 0" }}>
             <Reveal>
               <About />
             </Reveal>
           </div>
 
-          <div id="section-projects" style={{ minHeight: "80vh", scrollMarginTop: "60px"}}>
-            <Reveal>
+       
+          <div id="section-projects" style={{ minHeight: "auto", scrollMarginTop: "60px", padding: "60px 0" }}>
+            <RevealProject>
               <Projects />
-            </Reveal>
+            </RevealProject>
           </div>
 
-          <div id="section-contact" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
+          <div id="section-contact" style={{ minHeight: "auto", scrollMarginTop: "60px", padding: "60px 0" }}>
             <Reveal>
               <Contact />
             </Reveal>

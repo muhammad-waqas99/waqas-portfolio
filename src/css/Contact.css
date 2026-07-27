@@ -1,9 +1,17 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .contact-container {
   width: 100%;
   padding: 30px 32px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  overflow-x: hidden; 
 }
 
 .contact-wrapper {
@@ -37,7 +45,6 @@
   margin: 0;
 }
 
-
 .divider {
   width: 100%;
   height: 1px;
@@ -50,18 +57,23 @@
   grid-template-columns: 1fr 1.2fr;
   gap: 32px;
   align-items: start;
+  width: 100%;
 }
 
-.contact-left, .contact-right {
+.contact-left, 
+.contact-right {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
+  min-width: 0;
 }
 
 .contact-block {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  width: 100%;
 }
 
 .block-title {
@@ -75,6 +87,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 
 .social-card {
@@ -87,6 +100,8 @@
   justify-content: space-between;
   text-decoration: none;
   transition: transform 0.25s ease, border-color 0.25s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .social-card:hover {
@@ -98,6 +113,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
+  min-width: 0; 
 }
 
 .social-icon {
@@ -105,6 +121,7 @@
   color: var(--accent, #34D399);
   display: flex;
   transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
 .social-card:hover .social-icon {
@@ -114,6 +131,7 @@
 .social-details {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .social-name {
@@ -121,25 +139,31 @@
   font-size: 14px;
   font-weight: 600;
   color: var(--ink, #E8EAE5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .social-user {
   font-family: monospace;
   font-size: 12px;
   color: var(--dim, #909590);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .arrow-icon {
   color: var(--dim, #909590);
   font-size: 18px;
   transition: transform 0.25s ease, color 0.25s ease;
+  flex-shrink: 0;
 }
 
 .social-card:hover .arrow-icon {
   color: var(--accent, #34D399);
   transform: translate(3px, -3px);
 }
-
 
 .form-card {
   background-color: var(--paper, #14191E);
@@ -149,12 +173,15 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  width: 100%;
 }
 
 .label-wrapper {
@@ -180,7 +207,8 @@
 .field-status.error { color: #FF5F56; }
 .field-status.success { color: var(--accent, #34D399); }
 
-.form-group input, .form-group textarea {
+.form-group input, 
+.form-group textarea {
   background-color: var(--bg, #0A0E0A);
   border: 1px solid var(--line, #232923);
   border-radius: 8px;
@@ -189,28 +217,34 @@
   font-family: monospace;
   font-size: 13px;
   outline: none;
+  width: 100%;
+  box-sizing: border-box;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.form-group input:focus, 
+.form-group textarea:focus {
   border-color: var(--accent, #34D399);
   box-shadow: 0 0 10px rgba(52, 211, 153, 0.15);
 }
 
-.form-group input.input-error, .form-group textarea.input-error {
+.form-group input.input-error, 
+.form-group textarea.input-error {
   border-color: #FF5F56;
 }
 
-.form-group input.input-success, .form-group textarea.input-success {
+.form-group input.input-success, 
+.form-group textarea.input-success {
   border-color: var(--accent, #34D399);
 }
-
 
 .status-banner {
   padding: 10px 14px;
   border-radius: 6px;
   font-family: monospace;
   font-size: 12px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .status-banner.success {
@@ -218,7 +252,6 @@
   border: 1px solid var(--accent, #34D399);
   color: var(--accent, #34D399);
 }
-
 
 .btn-execute {
   background-color: var(--accent, #34D399);
@@ -234,6 +267,8 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -251,12 +286,30 @@
   to { transform: rotate(360deg); }
 }
 
+
 @media (max-width: 868px) {
   .contact-container {
-    padding: 25px 16px;
+    padding: 20px 12px; 
+  }
+
+  .contact-wrapper {
+    gap: 24px;
+  }
+
+  .contact-header .section-title {
+    font-size: 1.75rem;
   }
 
   .contact-content-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .form-card {
+    padding: 16px; 
+  }
+
+  .social-card {
+    padding: 12px 14px;
   }
 }

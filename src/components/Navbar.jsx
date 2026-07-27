@@ -11,7 +11,7 @@ const Navbar = ({ activeTab = 'about', setActiveTab }) => {
     }
     setIsOpen(false);
 
-    // Smooth Scroll to Content Section
+
     const sectionElement = document.getElementById(`section-${tabName}`);
     if (sectionElement) {
       sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -21,7 +21,7 @@ const Navbar = ({ activeTab = 'about', setActiveTab }) => {
   return (
     <nav className="nav-wrapper">
       <div className="nav-container">
-        {/* Hamburger Mobile Toggle Button */}
+       
         <button 
           className="hamburger-btn" 
           onClick={() => setIsOpen(!isOpen)}
@@ -35,14 +35,9 @@ const Navbar = ({ activeTab = 'about', setActiveTab }) => {
           <span className="current-tab-name">{activeTab}</span>
         </button>
 
-        {/* Navigation Tabs List */}
+
         <ul className={`nav-ls ${isOpen ? 'open' : ''}`}>
-          <li className={activeTab === 'about' ? 'active' : ''}>
-            <button onClick={() => handleTabClick('about')} type="button">
-              <FileText className="file-icon icon-md" />
-              <span>about.md</span>
-            </button>
-          </li>
+
           
           <li className={activeTab === 'stack' ? 'active' : ''}>
             <button onClick={() => handleTabClick('stack')} type="button">
@@ -57,7 +52,12 @@ const Navbar = ({ activeTab = 'about', setActiveTab }) => {
               <span>projects/</span>
             </button>
           </li>
-
+          <li className={activeTab === 'about' ? 'active' : ''}>
+            <button onClick={() => handleTabClick('about')} type="button">
+              <FileText className="file-icon icon-md" />
+              <span>about.md</span>
+            </button>
+          </li>
           <li className={activeTab === 'contact' ? 'active' : ''}>
             <button onClick={() => handleTabClick('contact')} type="button">
               <Terminal className="file-icon icon-sh" />

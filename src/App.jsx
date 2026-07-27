@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import Navbar from "./components/Navbar";
 import { ArrowUp } from "lucide-react";
 import Hero from "./components/Hero";
+import Skills from "./components/Skills";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -68,15 +69,14 @@ function App() {
             <Hero/>
        
         <main style={{ padding: "20px", color: "var(--ink)", position: "relative", zIndex: 2 }}>
+          <div id="section-stack" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
+            <Skills/>
+          </div>
           <div id="section-about" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
             <h2>about.md</h2>
             <p>Your about section content here...</p>
           </div>
 
-          <div id="section-stack" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
-            <h2>stack.json</h2>
-            <p>Your tech stack section content here...</p>
-          </div>
 
           <div id="section-projects" style={{ minHeight: "80vh", scrollMarginTop: "60px" }}>
             <h2>projects/</h2>

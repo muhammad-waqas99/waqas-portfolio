@@ -4,11 +4,11 @@ import { Header } from "./components/Header";
 import Navbar from "./components/Navbar";
 import { ArrowUp } from "lucide-react";
 import Hero from "./components/Hero";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/project/Projects";
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 import { motion } from "framer-motion";
 
 

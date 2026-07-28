@@ -1,9 +1,9 @@
 import React from 'react';
-import { contactData } from '../data/contactData';
+import { contactData } from '../../data/contactData';
 import ContactInfo from './ContactInfo';
-import SocialLinks from './SocialLinks';
+import SocialLinks from '../SocialLinks';
 import ContactForm from './ContactForm';
-import '../css/Contact.css';
+import '../../css/Contact.css';
 
 const Contact = () => {
   return (

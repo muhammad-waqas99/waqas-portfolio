@@ -1,7 +1,7 @@
 import React from 'react';
-import { footerData } from '../data/footerData';
+import { footerData } from '../../data/footerData';
 import FooterLinks from './FooterLinks';
-import '../css/Footer.css';
+import '../../css/Footer.css';
 
 const Footer = () => {
   const { header, terminalMessage, socials, copyright, terminalExit } = footerData;

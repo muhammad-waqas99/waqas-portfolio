@@ -1,6 +1,6 @@
 .skills-container {
   width: 100%;
-  padding: 40px 32px;
+  padding: 20px 32px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -117,7 +117,7 @@
 
 @media (max-width: 640px) {
   .skills-container {
-    padding: 30px 16px;
+    padding: 15px 16px;
   }
 
   .cards-wrapper {

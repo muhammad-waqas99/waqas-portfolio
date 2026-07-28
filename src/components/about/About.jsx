@@ -1,10 +1,10 @@
 import React from 'react';
-import { aboutData } from '../data/aboutData';
-import DeveloperConfig from './DeveloperConfig';
+import { aboutData } from '../../data/aboutData';
+import DeveloperConfig from '../DeveloperConfig';
 import QuickInfo from './QuickInfo';
 import JourneyTimeline from './JourneyTimeline';
 import EducationCard from './EducationCard';
-import '../css/About.css';
+import '../../css/About.css';
 
 const About = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import { skillsData } from '../data/skills';
+import { skillsData } from '../../data/skills';
 import SkillCard from './SkillCard';
-import '../css/Skills.css';
+import '../../css/Skills.css';
 
 const Skills = () => {
   return (

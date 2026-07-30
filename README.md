@@ -1,18 +1,69 @@
-# React + Vite
+````markdown
+# Muhammad Waqas Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal developer portfolio built with React and Vite to showcase my projects, technical skills, and learning journey.
 
-Currently, two official plugins are available:
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=vercel)](https://waqas-portfolio-blond.vercel.app/)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Responsive layout
+- Dark and light theme
+- IDE and terminal-inspired UI
+- Project showcase
+- Skills section
+- Resume preview and download
+- Contact form with EmailJS
+- SEO metadata and Open Graph support
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Tech Stack
 
-Note: This will impact Vite dev & build performances.
+- React
+- Vite
+- JavaScript
+- CSS
+- Framer Motion
+- GSAP
+- EmailJS
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Live Demo
+
+https://waqas-portfolio-blond.vercel.app/
+
+
+
+## Environment Variables
+
+Create a `.env` file in the project root and add the following variables:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+
+## Installation
+
+```bash
+git clone https://github.com/muhammad-waqas99/waqas-portfolio.git
+
+cd waqas-portfolio
+
+npm install
+
+npm run dev
+````
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+```
+```

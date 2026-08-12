@@ -1,4 +1,4 @@
-````markdown
+
 # Muhammad Waqas Portfolio
 
 A personal developer portfolio built with React and Vite to showcase my projects, technical skills, and learning journey.

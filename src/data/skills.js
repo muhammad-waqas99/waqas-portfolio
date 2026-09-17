@@ -3,13 +3,16 @@ export const skillsData = [
     category: "frontend",
     skills: [
       { name: "React.js", icon: "FaReact", color: "#61DAFB" },
+      { name: "Next.js", icon: "SiNextdotjs", color: "#E8EAE5" },
       { name: "JavaScript", icon: "SiJavascript", color: "#F7DF1E" },
+      { name: "TypeScript", icon: "SiTypescript", color: "#3178C6" },
       { name: "HTML5", icon: "FaHtml5", color: "#E34F26" },
       { name: "CSS3", icon: "FaCss3Alt", color: "#1572B6" },
       { name: "Tailwind CSS", icon: "SiTailwindcss", color: "#38BDF8" },
       { name: "React Router", icon: "SiReactrouter", color: "#CA4245" }
     ]
   },
+
   {
     category: "backend",
     skills: [
@@ -21,6 +24,7 @@ export const skillsData = [
       { name: "Clerk Auth", icon: "SiClerk", color: "#6C47FF" }
     ]
   },
+
   {
     category: "database",
     skills: [
@@ -28,6 +32,7 @@ export const skillsData = [
       { name: "Mongoose", icon: "SiMongoose", color: "#880000" }
     ]
   },
+
   {
     category: "tools",
     skills: [
@@ -37,25 +42,27 @@ export const skillsData = [
       { name: "Vite", icon: "SiVite", color: "#646CFF" }
     ]
   },
+
   {
     category: "languages",
     skills: [
       { name: "JavaScript", icon: "SiJavascript", color: "#F7DF1E" },
+      { name: "TypeScript", icon: "SiTypescript", color: "#3178C6" },
       { name: "C++", icon: "SiCplusplus", color: "#00599C" }
     ]
   },
+
   {
     category: "stateManagement",
     skills: [
       { name: "Zustand", icon: "SiRedux", color: "#764ABC" }
     ]
   },
+
   {
     category: "currentlyLearning",
     skills: [
-      { name: "Next.js", icon: "SiNextdotjs", color: "#E8EAE5" },
-      { name: "TypeScript", icon: "SiTypescript", color: "#3178C6" },
-      { name: "Docker", icon: "FaDocker", color: "#2496ED" }
+      { name: "SQL", icon: "TbSql", color: "#4479A1" }
     ]
   }
 ];

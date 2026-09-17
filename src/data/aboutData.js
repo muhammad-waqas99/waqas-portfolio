@@ -38,11 +38,11 @@ export const aboutData = {
     { year: "2026", title: "Currently Building & Seeking Roles", desc: "Building scalable web platforms without instructional tutorials." }
   ],
 
-  education: {
-    matriculation: "Completed",
-    intermediate: "Currently pursuing Intermediate (Computer Science)",
-    professionalTraining: "Web & App Development - Saylani Mass IT Training (SMIT)"
-  },
-
+education: {
+  matriculation: "Completed",
+  intermediate: "Completed - Computer Science",
+  bachelors: "BS Computer Science - Mohammad Ali Jinnah University (MAJU), Currently pursuing",
+  professionalTraining: "Web & App Development - Saylani Mass IT Training (SMIT)"
+},
   closingQuote: "// Always learning. Always building."
 };

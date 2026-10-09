@@ -41,7 +41,7 @@ export const aboutData = {
 education: {
   matriculation: "Completed",
   intermediate: "Completed - Computer Science",
-  bachelors: "BS Computer Science - Mohammad Ali Jinnah University (MAJU), Currently pursuing",
+  bachelors: "BS Cyber Security - Mohammad Ali Jinnah University (MAJU), Currently pursuing",
   professionalTraining: "Web & App Development - Saylani Mass IT Training (SMIT)"
 },
   closingQuote: "// Always learning. Always building."

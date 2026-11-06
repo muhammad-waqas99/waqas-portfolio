@@ -4,6 +4,9 @@
 A personal developer portfolio built with React and Vite to showcase my projects, technical skills, and learning journey.
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=vercel)](https://waqas-portfolio-blond.vercel.app/)
+
+
+
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -32,9 +35,7 @@ A personal developer portfolio built with React and Vite to showcase my projects
 - EmailJS
 
 
-## Live Demo
 
-https://waqas-portfolio-blond.vercel.app/
 
 
 
